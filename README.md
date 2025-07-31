@@ -1,11 +1,11 @@
-## Read first
-Highly experimental, not supported. Not an official module. Don't @ me.
-
 ## Sentry handler for LandSandBoat
 - Uploads source code, debug symbols to Sentry after build
 - Uploads crash reports to Sentry, including:
     - Minidump
     - Log file
+
+## Read first
+Highly experimental, not supported. Not an official module. Don't @ me.
 
 ## Limitations
 - Windows only at this time
@@ -55,6 +55,7 @@ Double-check the file after running it.
 
 ### (Optional) Enable minidump attachment
 Settings > Security & Privacy > Store Minidumps As Attachments
+<img width="1661" height="215" alt="image" src="https://github.com/user-attachments/assets/932d6cde-a5e3-41f9-9e93-0195acfd7d04" />
 
 ### Add Sentry collection endpoint to your config
 Edit `settings/main.lua` and add the following option:
@@ -89,6 +90,8 @@ The following logs should be generated, if you have debug logging enabled:
 [sentry] DEBUG sending envelope
 [sentry] INFO handing control over to crashpad
 ```
+
+<img width="1947" height="1093" alt="image" src="https://github.com/user-attachments/assets/badfff4b-5714-4be8-a0b1-ea85676ba33a" />
 
 ## Ideas
 - Hook this into Lua error handler to capture Lua errors and upload them to Sentry.
