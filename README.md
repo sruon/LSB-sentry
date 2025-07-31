@@ -1,5 +1,5 @@
 ## Sentry handler for LandSandBoat
-- Uploads source code, debug symbols to Sentry after build
+- Uploads source code, debug symbols to [Sentry](https://sentry.io/) after build
 - Uploads crash reports to Sentry, including:
     - Minidump
     - Log file
@@ -9,7 +9,7 @@ Highly experimental, not supported. Not an official module. Don't @ me.
 
 ## Limitations
 - Windows only at this time
-- Focused on SaaS first. Self-hosted Sentry _should_ work with slight changes.
+- Focused on SaaS first. [Self-hosted Sentry](https://develop.sentry.dev/self-hosted/) _should_ work with slight changes.
 - Only captures crashes.
 - You must be creating debug symbols in your build process.
 - Debug symbols are large and may use a lot of disk space and bandwidth.
